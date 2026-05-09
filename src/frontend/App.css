@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+.fade {
+  animation: forwards 1s fadeUp;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 100;
+    transform: translateY(0px);
+  }
+}
+
+.fadeSearch {
+  animation: forwards 1s fadeS;
+}
+
+@keyframes fadeS {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html,
+body {
+  background-color: #111;
+  overflow: hidden;
+}
